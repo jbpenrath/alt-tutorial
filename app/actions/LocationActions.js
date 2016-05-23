@@ -17,9 +17,6 @@ class LocationActions {
     return location;
   }
 
-  resetFavorites () {
-    return null;
-  }
 }
 
 export default alt.createActions(LocationActions);

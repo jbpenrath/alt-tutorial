@@ -5,17 +5,12 @@ class FavoritesStore {
   constructor () {
     this.locations = [];
     this.bindListeners({
-      addFavoriteLocation: LocationActions.FAVORITE_LOCATION,
-      resetFavoriteLocations: LocationActions.RESET_FAVORITES
+      addFavoriteLocation: LocationActions.FAVORITE_LOCATION
     });
   }
 
   addFavoriteLocation (location) {
     this.locations.push(location);
-  }
-
-  resetFavoriteLocations () {
-    this.locations = [];
   }
 
 }
